@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Image Trivia Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Open Trivia Quiz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <div class="start-screen">
-      <h1>Image Trivia Quiz</h1>
+      <h1>Open Trivia Quiz</h1>
       <label for="category">Select Category:</label>
       <select id="category">
-        <option value="custom">Custom with Images</option>
-        <option value="9">General Knowledge (No Images)</option>
+        <option value="9">General Knowledge</option>
+        <option value="21">Sports</option>
+        <option value="23">History</option>
+        <option value="17">Science & Nature</option>
+        <option value="18">Computer Science</option>
       </select>
       <button id="startBtn">Start Quiz</button>
     </div>
 
     <div class="quiz-container" style="display: none;">
       <h2 id="question">Question text</h2>
-      <img id="question-img" src="" alt="" style="max-width: 100%; display: none;" />
       <ul id="options"></ul>
-      <button id="nextBtn" style="display: none;">Next</button>
+      <button id="nextBtn" style="display:none;">Next</button>
       <div id="score"></div>
     </div>
   </div>
